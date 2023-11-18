@@ -1,0 +1,375 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    margin: 0;
+}
+
+a {
+    color: #FFF;
+}
+
+button,a {
+    display: block;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;  
+    padding: 0 10px;
+}
+
+.header {
+    min-height: 85px;
+    background-color: #161616;
+    position: fixed;
+    top: 0;
+    z-index: 9;
+    width: 100%;
+}
+
+.header__logo {
+    font-family: 'Pacifico', cursive;
+    color: #FFF;
+    font-size: 40px;
+    color: #df9f1f;
+    font-weight: 500;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 85px;
+}
+
+.header__menu {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.header__menu-btn {
+    font-size: 20px;
+    font-weight: 400;
+    background: transparent;
+    border: none;
+    color: #adacab;
+    padding-bottom: 3px;
+    position: relative;
+}
+
+.header__menu-link {
+    font-size: 20px;
+    color: #adacab;
+    position: relative;
+    padding-bottom: 3px;
+}
+
+.header__menu-btn:hover {
+    color: #DF9F1F;
+    transition: 0.7s;
+}
+
+.header__menu-btn::before {
+    content: '';
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    background-color: none;
+}
+
+.header__menu-btn:hover::before {
+    background-color: #DF9F1F;
+    transition: 0.7s;
+}
+
+.header__menu-link:hover {
+    color: #DF9F1F;
+    transition: 0.7s;
+}
+
+.header__menu-link::before {
+    content: '';
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    background-color: none;
+}
+
+.header__menu-link:hover::before {
+    background-color: #DF9F1F;
+    transition: 0.7s;
+}
+
+.info {
+    background-image: url(./images/hookan-2.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1000px;
+    position: relative;
+    z-index: 1;
+}
+
+.info::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: #111;
+    position: absolute;
+    z-index: 2 ;
+    opacity: 0.5;
+}
+
+.info__box-title {
+    position: relative;
+    z-index: 3;
+    color: #FFF;
+    text-align: center;
+    
+}
+
+.info__box-text {
+    position: relative;
+    z-index: 3;
+    color: #FFF;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.info__inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1000px;
+    z-index: 3;
+}
+
+.info__box-tel {
+    position: relative;
+    z-index: 4;
+    color: #FFF;
+    font-size: 25px;
+    padding: 30px;
+    width: 400px;
+    text-align: center;
+    border-radius: 30px;
+    border: 1px solid #DF9F1F;
+    margin-top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #df9f1f3b;
+}
+
+.info__box-tel::before {
+    content: "\f095";
+    position: absolute;
+    font-family: 'icomoon';
+    top: 30px;
+    left: 40px;
+}
+
+.info__box-tel:hover {
+    background-color: #DF9F1F;
+    transition: 1s;
+}
+
+.info__box-vk {
+    position: relative;
+    z-index: 4;
+    color: #FFF;
+    font-size: 25px;
+    padding: 30px;
+    width: 400px;
+    text-align: center;
+    border-radius: 30px;
+    border: 1px solid #0077FF;
+    margin-top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #0077FF3b;
+}
+
+.info__box-vk::before {
+    content: "\ea98";
+    position: absolute;
+    font-family: 'icomoon';
+    top: 30px;
+    left: 40px;
+}
+
+.info__box-vk:hover {
+    background-color: #0077FF;
+    transition: 1s;
+}
+
+.info__box-tg {
+    position: relative;
+    z-index: 4;
+    color: #FFF;
+    font-size: 25px;
+    padding: 30px;
+    width: 400px;
+    text-align: center;
+    border-radius: 30px;
+    border: 1px solid #1C93E3;
+    margin-top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #1C93E33b;
+}
+
+.info__box-tg::before {
+    content: "\f1d8";
+    position: absolute;
+    font-family: 'icomoon';
+    top: 30px;
+    left: 40px;
+}
+
+.info__box-tg:hover {
+    background-color: #1C93E3;
+    transition: 1s;
+}
+
+.service {
+    padding: 70px 0 20px;
+    background-color: #080808;
+}
+
+.service__title {
+    font-weight: 400;
+    text-align: center;
+    color: #adacab;
+}
+
+.service__item-number {
+    font-size: 52px;
+    font-weight: 400;
+    color: #ADACAB;
+}
+
+.service__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 140px;
+    margin-top: 40px;
+}
+
+.service__item-title {
+    font-weight: 400;
+    font-size: 20px;
+    color: #adacab;
+}
+
+.service__item-text {
+    margin-top: 8px;
+    color: #686666;
+}
+
+.line {
+    position: relative;
+    padding-bottom: 40px;
+}
+
+.service__item-box {
+    width: 250px;
+}
+
+.line::before {
+    content: '';
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    background-color: #adacab;
+    bottom: 0;
+}
+
+.service__title-bonus {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 32px;
+    font-weight: 400;
+    color: #adacab;
+}
+
+.service__text-bonus {
+    color: #686666;
+    margin-top: 8px;
+}
+
+.service__box-bonus {
+    width: 350px;
+    margin-top: 30px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.footer {
+    padding-top: 20px;
+    background-color: #080808;
+}
+
+.footer__inner {
+    position: relative;
+}
+
+.footer__inner::before {
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: #ADACAB;
+    position: absolute;
+    top: 0;
+}
+
+.footer__link-vk{
+    width: 40px;
+    height: 40px;
+    position: relative;
+}
+
+.footer__link-vk::before {
+    position: absolute;
+    content: "\ea98";
+    font-family: 'icomoon';
+    font-size: 40px;
+    color: #0077FF;
+}
+
+.footer__link-tg{
+    width: 40px;
+    height: 40px;
+    position: relative;
+}
+
+.footer__link-tg::before {
+    position: absolute;
+    content: "\f1d8";
+    font-family: 'icomoon';
+    font-size: 40px;
+    color: #1C93E3;
+}
+
+.footer__inner {
+    padding: 20px 0;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
